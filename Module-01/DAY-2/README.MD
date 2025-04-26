@@ -1,4 +1,4 @@
-# Ex.No:1(B) VARIABLES AND OPERATOR
+## Ex.No:1(B) VARIABLES AND OPERATOR
 
 ## AIM:
 To write a Java program to get values of variables 'a' and 'b' and then check if both the conditions 'a < 50' and 'a < b' are true. [Class name is ‘Demo’]
@@ -21,25 +21,42 @@ b)	If the condition is false, print "false" using the 'print' method of 'System.
 
 
 ## PROGRAM:
- ```
+```
 /*
 Program to implement a variable and operators using Java
-Developed by: 
-RegisterNumber:  
+Developed by: A.DHANUSH
+RegisterNumber: 212222220010
 */
 ```
-
 ## Sourcecode.java:
+```java
+import java.util.Scanner;
 
+public class Demo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        int a = scanner.nextInt();
 
+        int b = scanner.nextInt();
 
-
-
-
+        if (a < 50 && a < b) {
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
+    }
+}
+```
 ## OUTPUT:
+```
+Input    Expected   Got
 
+23       true       true
+34
 
-
+124      false      false
+23
+```
 ## RESULT:
 Thus, the Java program to get values of variables 'a' and 'b' and then check if both the conditions 'a < 50' and 'a < b' are true is created successfully.
