@@ -29,20 +29,70 @@
  ```
 /*
 Program to implement a final & Static using Java
-Developed by: 
-RegisterNumber:  
+Developed by: A.DHANUSH
+RegisterNumber:  212222220010
 */
 ```
 
 ## Sourcecode.java:
+```
+class Name {
+    String Fname;
+    String Mname;
+    String Lname;
+
+    Name(String fname, String mname, String lname) {
+        this.Fname = fname;
+        this.Mname = mname;
+        this.Lname = lname;
+    }
+
+    void display() {
+        System.out.println("First Name: " + Fname);
+        System.out.println("Middle Name: " + Mname);
+        System.out.println("Last Name: " + Lname);
+    }
+}
+
+class Employee {
+    final int Emp_Id;           // final keyword: cannot be changed once assigned
+    Name name;                  // object of Name class
+    static String company = "ABC Corp";  // static variable shared by all Employee objects
+
+    Employee(int empId, Name name) {
+        this.Emp_Id = empId;
+        this.name = name;
+    }
+
+    void display() {
+        System.out.println("Employee ID: " + Emp_Id);
+        name.display();
+        System.out.println("Company: " + company);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Name empName = new Name("Dhanush", "A", "Kumar");
+        Employee emp = new Employee(101, empName);
+        emp.display();
+    }
+}
 
 
+```
 
 
 
 
 
 ## OUTPUT:
+```Employee ID: 101
+First Name: Dhanush
+Middle Name: A
+Last Name: Anbu
+Company: ABC Corp
+```
 
 
 
