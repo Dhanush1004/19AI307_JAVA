@@ -21,21 +21,30 @@ To create a java program using StringTokenizer class that tokenizes a string "My
  ```
 /*
 Program to implement a String Tokenizer using Java
-Developed by: 
-RegisterNumber:  
+Developed by: A.DHANUSH
+RegisterNumber:  212222220010
 */
 ```
 
 ## Sourcecode.java:
-
-
-
-
-
+```
+import java.util.*;
+public class GFG {
+	public static void main(String[] args)
+	{
+	    Scanner sc=new Scanner(System.in);
+		String str = sc.nextLine();
+		String[] split = str.split(" ");
+		for (int i = 0; i < split.length; i++)
+			System.out.println(split[i]);
+	}
+}
+```
 
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/75834d6e-4726-4fab-a784-700c00296ddc)
 
 
 ## RESULT:
