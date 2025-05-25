@@ -10,29 +10,36 @@
 - i) Print "Welcome :: " followed by `str` (twice)
 3.	End
 
-
-
 ## PROGRAM:
  ```
 /*
 Program to implement a Packages using Java
-Developed by: 
-RegisterNumber:  
+Developed by: A.DHANUSH
+RegisterNumber: 2122222220010
 */
 ```
 
 ## Sourcecode.java:
+```
+  class Display {
 
+	static synchronized void wish(String name) {
+		for (int i = 0; i <= 1; i++) {
+			System.out.print("Welcome :: ");
+			try {
+				Thread.sleep(600);
+			} catch (InterruptedException e) {
 
-
-
-
-
+			}
+			System.out.println(name);
+		}
+	}
+  }
+```
 
 ## OUTPUT:
 
-
+![image](https://github.com/user-attachments/assets/d1839a22-c590-495f-bc6a-303d5f85e3db)
 
 ## RESULT:
 Thus the java program for synchronization was executed successfully.
-
