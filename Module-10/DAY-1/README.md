@@ -19,22 +19,44 @@
  ```
 /*
 Program to implement a ARRAY LIST using Java
-Developed by: 
-RegisterNumber:  
+Developed by: A.DHANUSH
+RegisterNumber: 2122222220010
 */
 ```
 
 ## Sourcecode.java:
 
+```
+import java.util.*;
 
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList<Integer> myNumbers = new ArrayList<Integer>();
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    for(int i=0;i<n;i++)
+    {
+    myNumbers.add(sc.nextInt());
+    }
+    for (int i : myNumbers) {
+      System.out.println(i);
+    }
+  } 
+}
+
+```
 
 
 
 
 
 ## OUTPUT:
-
-
+```
+Input	           Result
+2                   3
+3                   4
+4
+```
 
 ## RESULT:
 TThus the Java Program to store n numbers (add elements of type Integer) and then display the n numbers using array List was executed successfully.
